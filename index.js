@@ -4,13 +4,8 @@ const util = require("util");
 
 const writeFileAsync= util.promisify(fs.writeFile);
 
-//async function userInput() {
-   // try{
-     // const { description }
-   // }
-//}
+// turn the inquier prompt into a function
 
-//async function userInput() {
 inquirer
   .prompt([
     {
@@ -65,4 +60,7 @@ inquirer
         console.log(response)
     })
 
+    // set up readme.md template using template literals. Then turn into a function
     const readMe = ``
+
+    // create a writefile with the function above and write a readme file to add. 
