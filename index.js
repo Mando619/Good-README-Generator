@@ -5,7 +5,7 @@ const util = require("util");
 
 const writeFileAsync= util.promisify(fs.writeFile);
 
-// turn the inquier prompt into a function with a return
+//  inquier prompt function with a return
 
 function userInput() {
   return inquirer.prompt([
@@ -73,42 +73,54 @@ function userInput() {
   return ` 
 ## ${answers.title}
 
-## Introduction:
+
+## Description
+![License](htts://img.shields.io/badge/License-${answers.license}-blue.svg "License Badge")
+
+## Introduction
 ${answers.description}
 
-## Table of Contents:
+## Table of Contents
 
+* [Description](#description)
+* [Table of Contents](#installation)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#test)
+* [Questions](#questions)
 
-## Installation:
+## Installation
 ${answers.instillation}
 
-## Usage:
+## Usage
 ${answers.usage}
 
-## Contributing:
+## Contributing
 ${answers.contributors}
 
-## License:
-${answers.license}
+## License
+[License](https://opensource.org/licenses/${answers.license})
 
 
-## Tests:
+## Tests
 ${answers.test}
 
 ## Questions:
-[GitHub Profile](https://github.com/${answers.username})
+![GitHub Profile](https://github.com/${answers.username})
 
 For further inquiry's that pertain to this application, 
 please reach me at ${answers.email}.
 `;
 }  
-// async function to return promises. created a object for the reade.me template, and put into a function
+// async function to return promises. created an object for the reade.me template, and put into a function
 // to be written when promp questions end
   async function initiate() {
     try {
       const answers = await userInput();
       const readMeFile = createReadMe(answers);
-
+      // util writing file. created a README.me file with readMefile as the object. 
       await writeFileAsync("README.md",readMeFile);
       console.log("It worked! Yay!")
     }
@@ -120,6 +132,6 @@ please reach me at ${answers.email}.
   initiate();
  // console.log(userInput);
     // set up readme.md template using template literals. Then turn into a function
-    //const readMe = ```
+    //const readMe = ``
 
     // create a writefile with the function above and write a readme file to add. 
