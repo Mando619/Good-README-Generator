@@ -1,6 +1,5 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-//const axios = require('axios');
 const util = require("util");
 
 const writeFileAsync= util.promisify(fs.writeFile);
@@ -71,6 +70,7 @@ function userInput() {
 // function to use template literal. created a README.md template 
   function createReadMe(answers) {
   return ` 
+
 ## ${answers.title}
 
 
@@ -101,6 +101,7 @@ ${answers.usage}
 ${answers.contributors}
 
 ## License
+
 [License](https://opensource.org/licenses/${answers.license})
 
 
@@ -108,7 +109,7 @@ ${answers.contributors}
 ${answers.test}
 
 ## Questions:
-![GitHub Profile](https://github.com/${answers.username})
+- [GitHub Profile](https://github.com/${answers.username})
 
 For further inquiry's that pertain to this application, 
 please reach me at ${answers.email}.

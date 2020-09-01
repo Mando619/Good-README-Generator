@@ -1,12 +1,13 @@
  
+
 ## README Generator
 
 
 ## Description
-![License](htts://img.shields.io/badge/License-GNU GPlv3-blue.svg "License Badge")
+![License](htts://img.shields.io/badge/License-Apache-blue.svg "License Badge")
 
 ## Introduction
-this is a command line application used to create a README.md through node.js. 
+This application is created to help a user create a readme.md file in a fast efficient manner. using node.js, util, inquirer, and fs. Prompts are given to recieve users input, and add them to the neccessary sections through the command line
 
 ## Table of Contents
 
@@ -23,20 +24,21 @@ this is a command line application used to create a README.md through node.js.
 undefined
 
 ## Usage
-
+To be used at the users discretion
 
 ## Contributing
-
+no other contributors. 
 
 ## License
-[License](https://opensource.org/licenses/GNU GPlv3)
+
+[License](https://opensource.org/licenses/Apache)
 
 
 ## Tests
-none
+npm inquirer will be needed to install. command is npm init, then npm install inquirer. This will be used to recieve prompt questions and applys toyour input.
 
 ## Questions:
-![GitHub Profile](https://github.com/mando619)
+- [GitHub Profile](https://github.com/Mando619)
 
 For further inquiry's that pertain to this application, 
-please reach me at libryum33@hotmail.com.
+please reach me at Libryum33@hotmail.com.
