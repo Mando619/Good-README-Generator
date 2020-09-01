@@ -102,6 +102,8 @@ For further inquiry's that pertain to this application,
 please reach me at ${answers.email}.
 `;
 }  
+// async function to return promises. created a object for the reade.me template, and put into a function
+// to be written when promp questions end
   async function initiate() {
     try {
       const answers = await userInput();
