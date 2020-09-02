@@ -42,11 +42,9 @@ function userInput() {
         type: "list",
         message: "Please select a license to use.",
         choices: [
-          "GNU GPlv3",
-          "ISC",
+          "GNU",
+          "BSD",
           "MIT",
-          "Apache",
-  
         ],
         name: "license"
       },
@@ -75,9 +73,11 @@ function userInput() {
 
 
 ## Description
-![License](htts://img.shields.io/badge/License-${answers.license}-blue.svg "License Badge")
+
+![GitHub license](https://img.shields.io/badge/license-${answers.license}-blue.svg)
 
 ## Introduction
+
 ${answers.description}
 
 ## Table of Contents
@@ -92,27 +92,32 @@ ${answers.description}
 * [Questions](#questions)
 
 ## Installation
+
 ${answers.instillation}
 
 ## Usage
+
 ${answers.usage}
 
 ## Contributing
+
 ${answers.contributors}
 
 ## License
 
-[License](https://opensource.org/licenses/${answers.license})
-
+![GitHub license](https://img.shields.io/badge/license-${answers.license}-blue.svg)
 
 ## Tests
+
 ${answers.test}
 
 ## Questions:
-- [GitHub Profile](https://github.com/${answers.username})
 
 For further inquiry's that pertain to this application, 
 please reach me at ${answers.email}.
+- [GitHub Profile](https://github.com/${answers.username})
+
+
 `;
 }  
 // async function to return promises. created an object for the reade.me template, and put into a function
@@ -122,8 +127,8 @@ please reach me at ${answers.email}.
       const answers = await userInput();
       const readMeFile = createReadMe(answers);
       // util writing file. created a README.me file with readMefile as the object. 
-      await writeFileAsync("README.md",readMeFile);
-      console.log("It worked! Yay!")
+      await writeFileAsync("README1.md",readMeFile);
+      console.log("It worked! Congrats!")
     }
     catch(error) {
       console.log(error);
