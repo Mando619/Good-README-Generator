@@ -7,7 +7,7 @@
 ## Description
 
 This application is catering to users who are wanting to save time on their readme.md.
-Useing node.js, npm inquirer, and fs helps generate this application. On the command line, user will be prompted with questions that pertain to the certain table of contents. When finished going through questions, ad readme.md markdown will be created with users input from prompt questions.
+Useing node.js, npm inquirer, and fs helps generate this application. On the command line, user will be prompted with questions that pertain to the certain table of contents. When finished going through questions, a readme.md markdown will be created with users input from prompt questions.
 
 ![2020-09-01 (3)](https://user-images.githubusercontent.com/65925169/91941061-6ff44c00-ecad-11ea-8ec1-9dbe5616bc09.png)
 
@@ -33,7 +33,9 @@ inquirer, use npm install inquirer in your node.js.
 
 ## Usage 
 
-To be used at for saving time and creating a well put README.md markdown.
+Video link below, gives a simple run through of how to use the command line to create the readme.md file.
+
+[Video Link](https://youtu.be/ih5cmxRKDYw)
 
 ## Contributing
 
@@ -41,7 +43,7 @@ no other contributors.
 
 ## License
 
-[License](https://opensource.org/licenses/GNU)
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 
 ## Tests
