@@ -1,4 +1,3 @@
- 
 
 ## Good-README-Generator
 
@@ -6,14 +5,14 @@
 
 ## Description
 
-This application is catering to users who are wanting to save time on their readme.md.
+This application is catering towards users who are wanting to save time on their readme.md.
 Using node.js, npm inquirer, and fs helps generate this application. On the command line, user will be prompted with questions that pertain to the certain table of contents. When finished going through questions, a readme.md markdown will be created with users input from prompt questions.
 
 ![2020-09-01 (3)](https://user-images.githubusercontent.com/65925169/91941061-6ff44c00-ecad-11ea-8ec1-9dbe5616bc09.png)
 
 [Link to Project](https://mando619.github.io/Good-README-Generator/)
 
-[Video Link](https://youtu.be/ih5cmxRKDYw)
+[Video Link](https://youtu.be/o9WxMIyOUy8)
 
 ## Table of Contents
 
@@ -52,9 +51,10 @@ No tests are implimented for this application.
 
 ## Questions
 
-- [GitHub Profile](https://github.com/Mando619)
-
 For further inquiry's that pertain to this application, 
-please reach me at Libryum33@hotmail.com.
+please reach me at estrada.mando7@gmail.com
 
-- [Linked In Profile](https://www.linkedin.com/in/armando-estrada-0a5304118/)
+* [GitHub Profile](https://github.com/Mando619)
+* [Linked In Profile](https://www.linkedin.com/in/armando-estrada-0a5304118/)
+* [Portfolio](https://mando619.github.io/Portfolio-Updated/)
+
